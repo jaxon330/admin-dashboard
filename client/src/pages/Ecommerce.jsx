@@ -8,7 +8,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const Ecommerce = () => {
   return (
-    <div className='mt-12'>
+    <div className='mt-12 w-full'>
       <div className='flex flex-wrap lg:flex-nowrap justify-center'>
         <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center'>
           <div className='flex justify-between items-center'>
@@ -17,6 +17,7 @@ const Ecommerce = () => {
               <p className='text-2xl'>$659,332.00</p>
             </div>
           </div>
+          {/* 'bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center */}
           <div className='mt-6'>
             <Button 
               color="white"
@@ -55,16 +56,37 @@ const Ecommerce = () => {
       </div>
 
       <div className='flex gap-10 flex-wrap justify-center'>
-        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-700'>
-            <div className='flex justify-between'>
-              <p className='font-semibold text-xl'>Revenue update</p>
-              <div className='flex items-center gap-4'>
-                <p className='flex items-center gap-2 text-gray-600 hover:drop-shadow-xl'>
-                  <span><GoPrimitiveDot /></span>
-                  <span>Expense</span>
+        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780'>
+          <div className='flex justify-between'>
+            <p className='font-semibold text-xl'>Revenue Updates</p>
+            <div className='flex items-center gap-4'>
+              <p className='flex items-center gap-2 text-gray-600 hover:drop-shadow-xl'>
+                <span><GoPrimitiveDot /></span>
+                <span>Expense</span>
+              </p>
+              <p className='flex items-center gap-2 text-green-400 hover:drop-shadow-xl'>
+                <span><GoPrimitiveDot /></span>
+                <span>Budget</span>
+              </p>
+            </div>
+          </div>
+
+          <div className='mt-10 flex gap-10 flex-wrap justify-center'>
+            <div className='border-r-1 border-color m-4 pr-10'>
+              <div>
+                <p>
+                  <span className='text-3xl font-semibold'>93,488</span>
+                  <span className='p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-green-400 ml-3 text-xs'>23%</span>
                 </p>
+                <p className='text-gray-500 mt-1'>Budget</p>
+              </div>
+              <div className='mt-8'>
+                <p className='text-3xl font-semibold'>48,477</p>
+                <p className='text-gray-500 mt-1'>Expense</p>
               </div>
             </div>
+          </div>
+
         </div>
       </div>
     </div>
