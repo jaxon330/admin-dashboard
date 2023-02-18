@@ -11,7 +11,6 @@ const Editor = () => {
       <RichTextEditorComponent>
         <Inject services={[ HtmlEditor, Image, Link, QuickToolbar, Toolbar]} />
       </RichTextEditorComponent>
-
     </div>
   )
 }
