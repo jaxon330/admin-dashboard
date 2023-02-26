@@ -6,6 +6,8 @@ New Admin Dashboard application is fully mobile responsive and customizable. You
 
 
 ## TECHNOLOGY USED
+* HTML
+* JavaScript
 * React
 * Tailwindcss
 * Syncfusion
